@@ -2,6 +2,7 @@ var express      = require('express');
 var usersCtrl    = require('./routes/technicienCtrl');
 var clientCtrl    = require('./routes/clientCtrl');
 var siteCtrl    = require('./routes/siteCtrl');
+var materielCtrl    = require('./routes/materielCtrl');
 
 // Router
 exports.router = (function() {
@@ -22,6 +23,10 @@ exports.router = (function() {
     apiRouter.route('/site/new/').post(siteCtrl.create);
     apiRouter.route('/sites/:id').get(siteCtrl.listSites);
     apiRouter.route('/site/:id').get(siteCtrl.getSite);
+
+    //Materiel routes
+    apiRouter.route('/materiel/new/').post(materielCtrl.create);
+    apiRouter.route('/materiel/:id').get(materielCtrl.getMateriel);
 
   
     return apiRouter;
