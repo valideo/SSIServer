@@ -26,5 +26,5 @@ server.use('/api/', apiRouter);
 
 //Launch server
 server.listen(port, function(){
-    console.log('server listening');
+    console.log('server listening on port ' + port);
 });

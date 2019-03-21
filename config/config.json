@@ -2,21 +2,21 @@
   "development": {
     "username": "root",
     "password": "val2407entin",
-    "database": "database_development_SSI",
+    "database": "SSIClient_development",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": "val2407entin",
-    "database": "database_test_SSI",
+    "database": "SSIClient_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
     "password": "val2407entin",
-    "database": "database_production_SSI",
+    "database": "SSIClient_production",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
