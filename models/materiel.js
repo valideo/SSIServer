@@ -10,7 +10,15 @@ module.exports = (sequelize, DataTypes) => {
     nbDmc: DataTypes.INTEGER,
     nbDf: DataTypes.INTEGER,
     nbDpa: DataTypes.INTEGER,
-    nbDl: DataTypes.INTEGER
+    nbDl: DataTypes.INTEGER,
+    refDm: DataTypes.INTEGER,
+    refDo: DataTypes.INTEGER,
+    refDts: DataTypes.INTEGER,
+    refDtv: DataTypes.INTEGER,
+    refDmc: DataTypes.INTEGER,
+    refDf: DataTypes.INTEGER,
+    refDpa: DataTypes.INTEGER,
+    refDl: DataTypes.INTEGER
   }, {});
   Materiel.associate = function(models) {
     // associations can be defined here

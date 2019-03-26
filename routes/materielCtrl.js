@@ -24,6 +24,14 @@ module.exports = {
         var nbDf    = req.body.nbDf;
         var nbDpa    = req.body.nbDpa;
         var nbDl    = req.body.nbDl;
+        var refDm    = req.body.refDm;
+        var refDo    = req.body.refDo;
+        var refDts    = req.body.refDts;
+        var refDtv    = req.body.refDtv;
+        var refDmc    = req.body.refDmc;
+        var refDf    = req.body.refDf;
+        var refDpa    = req.body.refDpa;
+        var refDl    = req.body.refDl;
 
         if (idSite == null || ssiRef == null) {
             return res.status(400).json({ 'error': 'missing parameters' });
@@ -61,7 +69,15 @@ module.exports = {
                 nbDmc: nbDmc,
                 nbDf: nbDf,
                 nbDpa: nbDpa,
-                nbDl: nbDl
+                nbDl: nbDl,
+                refDm: refDm,
+                refDo: refDo,
+                refDts: refDts,
+                refDtv: refDtv,
+                refDmc: refDmc,
+                refDf: refDf,
+                refDpa: refDpa,
+                refDl: refDl
               })
               .then(function(newMateriel) {
                 done(newMateriel);
@@ -91,7 +107,7 @@ module.exports = {
           return res.status(400).json({ 'error': 'wrong token' });
     
         models.Materiel.findOne({
-          attributes: ['id', 'ssiRef', 'nbDm', 'nbDo', 'nbDts', 'nbDtv', 'nbDmc', 'nbDf', 'nbDpa', 'nbDl', 'updatedAt'],
+          attributes: ['id', 'ssiRef', 'nbDm', 'nbDo', 'nbDts', 'nbDtv', 'nbDmc', 'nbDf', 'nbDpa', 'nbDl', 'refDm', 'refDo', 'refDts', 'refDtv', 'refDmc', 'refDf', 'refDpa', 'refDl', 'updatedAt'],
           where: { idSite: siteId }
         }).then(function(site) {
           if (site) {

@@ -23,25 +23,49 @@ module.exports = {
       nbDm: {
         type: Sequelize.INTEGER
       },
+      refDm: {
+        type: Sequelize.INTEGER
+      },
       nbDo: {
+        type: Sequelize.INTEGER
+      },
+      refDo: {
         type: Sequelize.INTEGER
       },
       nbDts: {
         type: Sequelize.INTEGER
       },
+      refDts: {
+        type: Sequelize.INTEGER
+      },
       nbDtv: {
+        type: Sequelize.INTEGER
+      },
+      refDtv: {
         type: Sequelize.INTEGER
       },
       nbDmc: {
         type: Sequelize.INTEGER
       },
+      refDmc: {
+        type: Sequelize.INTEGER
+      },
       nbDf: {
+        type: Sequelize.INTEGER
+      },
+      refDf: {
         type: Sequelize.INTEGER
       },
       nbDpa: {
         type: Sequelize.INTEGER
       },
+      refDpa: {
+        type: Sequelize.INTEGER
+      },
       nbDl: {
+        type: Sequelize.INTEGER
+      },
+      refDl: {
         type: Sequelize.INTEGER
       },
       createdAt: {
